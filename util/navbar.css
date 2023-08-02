@@ -1,0 +1,131 @@
+/* NOT VISIBLE */
+.navbar-top-box-mobile {
+  display: none;
+}
+
+.sticky-container {
+  position: sticky;
+  top: 0%;
+  z-index: 5;
+  background-color: white;
+}
+
+.navbar-top-flex {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.navbar-top-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 80px;
+  /* background-color: red; */
+}
+
+.navbar-top-box:nth-child(1) {
+  width: 15%;
+}
+
+.navbar-top-box:nth-child(2) {
+  width: 70%;
+}
+
+.navbar-top-box:nth-child(3) {
+  width: 15%;
+}
+
+.navbar-top-box input[type="text"] {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 40%;
+  height: 30px;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-top-box input[type="text"]:focus {
+  width: 60%;
+}
+
+.navbar-top-box-name {
+  text-decoration: none;
+}
+
+.navbar-top-box-name:hover {
+  color: orange;
+}
+
+.navbar-menu-flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  top: auto;
+  position: sticky;
+}
+
+.navbar-menu-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 80px;
+  /* background-color: red; */
+}
+
+.navbar-menu-box button {
+  font-size: 13px;
+  width: auto;
+  height: 40px;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.navbar-menu-box button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  border-bottom: 1px solid orange;
+  color: orange;
+}
+
+@media screen and (max-width: 767px) {
+  /* NOT VISIBLE */
+  .navbar-top-box:nth-child(1) {
+    display: none;
+  }
+  .navbar-top-box:nth-child(3) {
+    display: none;
+  }
+  .navbar-menu-flex {
+    display: none;
+  }
+  .navbar-menu-box {
+    display: none;
+  }
+
+  /* VISIBLE */
+  .navbar-top-flex {
+    gap: unset;
+  }
+
+  .navbar-top-box:nth-child(2) {
+    width: 70%;
+    /* background-color: yellow; */
+    justify-content: flex-start;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+
+  .navbar-top-box-mobile {
+    display: flex;
+    /* background-color: red; */
+    width: 30%;
+    justify-content: flex-end;
+    padding-right: 15px;
+    align-items: center;
+  }
+}
