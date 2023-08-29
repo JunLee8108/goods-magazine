@@ -60,15 +60,13 @@ export default function Navbar({ post }) {
     } else {
       timer = setTimeout(() => {
         setModal(false);
-      }, 200);
+      }, 1000);
     }
 
     return () => {
       clearTimeout(timer);
     };
   }, [effectModal]);
-
-  console.log(searchResult);
 
   return (
     <>
@@ -108,7 +106,7 @@ export default function Navbar({ post }) {
           {menu.map(function (a, index) {
             return (
               <div className="navbar-menu-box" key={index}>
-                <Link href={menu[index].name}>
+                <Link href={`/${menu[index].name}`}>
                   <button>{menu[index].name}</button>
                 </Link>
               </div>

@@ -29,3 +29,14 @@ ul {
 a:visited {
   color: black;
 }
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-title h2 {
+  padding-bottom: 5px;
+  letter-spacing: 3px;
+  border-bottom: 4px solid black;
+}
