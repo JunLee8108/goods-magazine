@@ -1,7 +1,7 @@
 import "./searchModal.css";
 import Link from "next/link";
 import Image from "next/image";
-// for commit
+// for commit frontend
 export default function SearchModal({
   closeModal,
   effectModal,
