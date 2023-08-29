@@ -1,7 +1,9 @@
-export default function Article() {
+export default function Article(props) {
   return (
     <>
-      <div>Article</div>
+      <div className="menu-title">
+        <h2>Article</h2>
+      </div>
     </>
   );
 }

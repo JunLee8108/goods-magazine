@@ -30,22 +30,35 @@
   width: 25%;
   height: auto;
   /* background-color: red; */
-  background-color: white;
+  /* background-color: white; */
   box-shadow: rgb(224, 224, 224) 0px 2px 4px 1px;
   border: none;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .home-bottom-post-box img {
   width: 100%;
-  height: 100%;
   cursor: pointer;
 }
 
 .home-bottom-post-box img:hover {
   opacity: 0.5;
+}
+
+.home-bottom-post-box h3 {
+  margin-bottom: 0;
+}
+
+.home-bottom-post-box-info {
+  width: 80%;
+}
+
+.home-bottom-post-box-info h4 {
+  font-weight: normal;
+  line-height: 30px;
 }
 
 /* Mobile */

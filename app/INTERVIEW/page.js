@@ -1,7 +1,11 @@
+import "./page.css";
+
 export default function Interview() {
   return (
     <>
-      <div>Interview</div>
+      <div className="menu-title">
+        <h2>Interview</h2>
+      </div>
     </>
   );
 }

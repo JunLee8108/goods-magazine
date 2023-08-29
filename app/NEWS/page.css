@@ -1,0 +1,9 @@
+.news-title {
+  display: flex;
+  justify-content: center;
+}
+
+.news-title h2 {
+  padding-bottom: 5px;
+  border-bottom: 4px solid black;
+}

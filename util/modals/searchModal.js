@@ -1,4 +1,6 @@
 import "./searchModal.css";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function SearchModal({
   closeModal,
@@ -43,9 +45,30 @@ export default function SearchModal({
         >
           {isLoading ? (
             <>
-              {filteredPost.map((a, index) => {
-                return <h3 key={index}>{filteredPost[index].title}</h3>;
-              })}
+              <div className="search-modal-flex">
+                {filteredPost.map((a, index) => {
+                  return (
+                    <div className="search-modal-box" key={index}>
+                      <h4>{filteredPost[index].date}</h4>
+                      <Link href={`/POST/${filteredPost[index]._id}`}>
+                        <Image
+                          src={`/${filteredPost[index].img}`}
+                          alt="post"
+                          width={400}
+                          height={400}
+                          onClick={() => {
+                            closeModal();
+                          }}
+                        ></Image>
+                      </Link>
+                      <h3>{filteredPost[index].title}</h3>
+                      <div className="search-modal-box-info">
+                        <h4>{filteredPost[index].info}</h4>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </>
           ) : null}
         </div>
